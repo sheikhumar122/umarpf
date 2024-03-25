@@ -14,7 +14,7 @@ export function Mountain({ isRotating, setIsRotating,  setCurrentStage, ...props
   const lastY = useRef(0);
   const rotationSpeed = useRef([0, 0]);
   const dampingFactor = 0.95;
-
+  const marginTop = 1; 
   
 
   const handlePointerDown = (event) => {
@@ -136,7 +136,7 @@ export function Mountain({ isRotating, setIsRotating,  setCurrentStage, ...props
 
 
   return (
-    <group ref={mountainRef} scale={[9, 15, 7]} rotation={[Math.PI, 0, 0]} {...props}>
+    <group ref={mountainRef} scale={[9, 15, 7]} rotation={[Math.PI, 0, 0]} position={[0, -marginTop, 0]} {...props}>
       <mesh
         castShadow
         receiveShadow

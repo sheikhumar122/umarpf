@@ -4,7 +4,8 @@ import Kashmiri1 from "../assets/Kashmiri1.mp3";
 import sakura from "../assets/sakura.mp3";
 import { HomeInfo, KashmirInfo, Loader } from "../components";
 import { soundoff, soundon } from "../assets/icons";
-import { Bird, Helicopter, Island, Mountain, Plane, Sky } from "../models";
+import { Bird, Island, Mountain, Plane, Sky } from "../models";
+import { Helicopter } from "../models/helicopter";
 
 const Home = () => {
   const audioRefSakura = useRef(new Audio(sakura));
